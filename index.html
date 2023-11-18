@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JS-task</title>
+</head>
+<body>
+    <header class="header container">
+            <h1>Список задач</h1>
+    </header>
+
+    <section class="addtask">
+        <h2>Новая задача</h2>
+        <div class="addtask-box">
+            <input type="text" placeholder="Название задачи...">
+            <button>+ Добавить</button>
+        </div>
+    </section>
+
+    <section class="list">
+        <div class="box">
+            <h2 class="box-backlog">Бэклог</h2>
+            <ul class="box-backlog__item">
+                <li>Выучить JS</li>
+                <li>Понять Redux</li>
+                <li>Съездить домой</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2 class="box-procces">В процессе</h2>
+            <ul class="box-procces__item">
+                <li>Попить смузи</li>
+                <li>Приготовить обед</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2 class="box-done">Готово</h2>
+            <ul class="box-done__item">
+                <li>Таска по РПИ</li>
+                <li>Приготовить ужин</li>
+
+            </ul>
+        </div>
+        <div class="box">
+            <h2 class="box-delete">Корзина</h2>
+            <ul class="box-del__item">
+                <li>Помыть посуду</li>
+                <li>Попить смузи</li>
+                <button><span>X</span> Очистить</button>
+            </ul>
+        </div>
+    </section>
+    
+</body>
+</html>

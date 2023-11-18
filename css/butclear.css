@@ -1,0 +1,15 @@
+.box-del__item button{
+    border-radius: 12px;
+    padding: 12px 24px;
+    border: none;
+    color: #fff;
+    background-color: rgb(251, 96, 85);
+}
+.box-del__item button:hover{
+    background-color: rgb(253, 151, 151);
+}
+
+
+
+
+

@@ -1,0 +1,57 @@
+.list{
+    display: flex;  
+    margin-top: 50px;
+    justify-content: space-around;
+}
+.box-backlog__item li{
+    box-shadow: 5px 0px 0px 0px rgb(211, 211, 211) inset;
+}
+.box-procces__item li{
+    box-shadow: 5px 0px 0px 0px rgb(152, 188, 255) inset;
+}
+.box-done__item li{
+    box-shadow: 5px 0px 0px 0px rgb(185, 255, 187) inset;
+}
+.box-del__item li{
+    box-shadow: 5px 0px 0px 0px rgb(252, 176, 176) inset;
+}
+
+li{
+    list-style-type:none;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+   
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.box{
+
+}
+.box h2{
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    max-width: fit-content;
+}
+.box-backlog{
+    background-color: rgb(211, 211, 211);
+    color: #727272;
+}
+.box-procces{
+    background-color: rgb(152, 188, 255);
+    color: rgb(25, 75, 111);
+}
+.box-done{
+    background-color: rgb(185, 255, 187);
+    color: rgb(41, 173, 41);
+}
+.box-delete{
+    background-color: rgb(252, 176, 176);
+    color: rgb(201, 34, 34);
+}
