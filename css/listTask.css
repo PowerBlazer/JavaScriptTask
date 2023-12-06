@@ -1,18 +1,18 @@
-.list{
+.board-app__list{
     display: flex;  
     margin-top: 50px;
     justify-content: space-around;
 }
-.box-backlog__item li{
+.backlog li{
     box-shadow: 5px 0px 0px 0px rgb(211, 211, 211) inset;
 }
-.box-procces__item li{
+.active li{
     box-shadow: 5px 0px 0px 0px rgb(152, 188, 255) inset;
 }
-.box-done__item li{
+.done li{
     box-shadow: 5px 0px 0px 0px rgb(185, 255, 187) inset;
 }
-.box-del__item li{
+.delete li{
     box-shadow: 5px 0px 0px 0px rgb(252, 176, 176) inset;
 }
 
@@ -21,37 +21,36 @@ li{
     padding: 15px 20px;
     background-color: #fff;
     border-radius: 8px;
-   
-}
+}  
 ul{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-
-.box{
-
-}
 .box h2{
     padding: 8px 12px;
     border-radius: 8px;
     margin-bottom: 20px;
     max-width: fit-content;
 }
-.box-backlog{
+.backlog h2{
     background-color: rgb(211, 211, 211);
     color: #727272;
 }
-.box-procces{
+.active h2{
     background-color: rgb(152, 188, 255);
     color: rgb(25, 75, 111);
 }
-.box-done{
+.done h2{
     background-color: rgb(185, 255, 187);
     color: rgb(41, 173, 41);
 }
-.box-delete{
+.delete h2{
     background-color: rgb(252, 176, 176);
     color: rgb(201, 34, 34);
+}
+.empty{
+    background-color: transparent;
+    border: 1px dashed #727272;
 }
