@@ -8,11 +8,10 @@ import { Constanats } from "./const.js";
 import { TaskListComponent } from "./components/taskListComponent.js";
 import { EmptyTasksComponent } from "./components/emptyTasksComponent.js";
 import { DelBtnComponent } from "./components/delBtnComponent.js";
+
 const bodyElement = document.querySelector(".board-app");
 const addTaskElement = document.querySelector(".addtask-app");
-
 render(new HeaderComponent(), bodyElement, RenderPosition.BEFOREBEGIN);
-
 const formAddTaskComponent = new FormAddTaskComponent();
 render(formAddTaskComponent, addTaskElement);
 
