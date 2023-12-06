@@ -64,14 +64,14 @@ function renderTaskBoard(taskService, container) {
             li.remove();
           });
 
-          e.target.parentElement.querySelector(".box-del__item").remove();
+          e.target.remove();
 
           const emptyComponent = new EmptyTasksComponent();
 
           render(emptyComponent, taskListComponent.getElement().querySelector("ul"));
           render(delBtnComponent, taskListComponent.getElement().querySelector("ul"));
 
-          e.target.parentElement.querySelector(".box-del__item").classList.add("disabled");
+          e.target.classList.add("disabled");
         })
       }
     }
