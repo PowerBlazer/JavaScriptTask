@@ -1,12 +1,12 @@
-const Constanats = {
-  Status: {
+const consts = {
+  status: {
     BACKLOG: "backlog",
     ACTIVE: "active",
     DONE: "done",
     DEL: "delete",
   },
 
-  StatusLabel: {
+  statusRu: {
     BACKLOG: "Бэклог",
     ACTIVE: "В процессе",
     DONE: "Готово",
@@ -14,4 +14,4 @@ const Constanats = {
   },
 };
 
-export { Constanats };
+export { consts };

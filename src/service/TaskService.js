@@ -1,20 +1,19 @@
 import { tasks } from "../mock/task.js";
-import { Constanats } from "../const.js";
+import { consts } from "../const.js";
 import { generateId } from "./generateId.js";
-export class TasksService {
-  #boardTasks = tasks;
 
-  getBoardTasks() {
-    return this.#boardTasks;
+export class TasksService {
+  static getBoardTasks() {
+    return tasks;
   }
 
-  getTasksByStatus(status) {
-    return this.#boardTasks.filter((task) => task.status === status);
+  static getTasksByStatus(status) {
+    return tasks.filter((task) => task.status === status);
   }
   
-  create(task) {
+  static create(task) {
     task.id = generateId();
-    task.status = Constanats.Status.BACKLOG;
-    this.#boardTasks.push(task);
+    task.status = consts.status.BACKLOG;
+    tasks.push(task);
   }
 }

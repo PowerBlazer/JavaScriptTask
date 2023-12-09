@@ -1,4 +1,4 @@
-import { AbstractComponent } from "../abstractComponent.js";
+import { AbstractComponent } from "./abstractComponent.js";
 
 export class TaskComponent extends AbstractComponent {
   constructor({ id, title, status }) {
