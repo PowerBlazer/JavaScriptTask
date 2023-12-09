@@ -39,7 +39,15 @@ export class ListBoardComponent extends AbstractComponent {
           const listTasksTheColumn = taskColumnComponent.getElement().querySelector("ul");
           render(delBtnComponent, listTasksTheColumn);
   
-          delBtnComponent.delTaskHandler();
+          delBtnComponent.deleteTaskHandler((e) => {
+            e.target.parentElement.querySelectorAll("li").forEach(li => li.remove());
+            e.target.remove();
+  
+            const emptyComponent = new EmptyTaskComponent();
+            render(emptyComponent, listTasksTheColumn);
+            render(delBtnComponent, listTasksTheColumn);
+            e.target.classList.add("disabled");
+          })
         }
       }
     }
